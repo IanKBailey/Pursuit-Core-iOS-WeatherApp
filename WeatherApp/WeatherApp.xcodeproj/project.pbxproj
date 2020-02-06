@@ -3,29 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		548CE052234D33B500B5177D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CE051234D33B500B5177D /* AppDelegate.swift */; };
 		548CE054234D33B500B5177D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CE053234D33B500B5177D /* SceneDelegate.swift */; };
-		548CE056234D33B500B5177D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CE055234D33B500B5177D /* ViewController.swift */; };
-		548CE059234D33B500B5177D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548CE057234D33B500B5177D /* Main.storyboard */; };
+		548CE056234D33B500B5177D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CE055234D33B500B5177D /* MainViewController.swift */; };
 		548CE05E234D33B600B5177D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548CE05C234D33B600B5177D /* LaunchScreen.storyboard */; };
 		548CE066234D33E600B5177D /* ZipCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CE065234D33E600B5177D /* ZipCodeHelper.swift */; };
 		548CE068234D340700B5177D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548CE067234D340700B5177D /* Assets.xcassets */; };
+		5680BF7E23EA07E000CD25FB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680BF7D23EA07E000CD25FB /* MainView.swift */; };
+		5680BF8023EA23C900CD25FB /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680BF7F23EA23C900CD25FB /* MainCell.swift */; };
+		5680BF8223EB388B00CD25FB /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680BF8123EB388B00CD25FB /* SecretKey.swift */; };
+		5680BF8523EB39D800CD25FB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5680BF8423EB39D800CD25FB /* ImageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		548CE04E234D33B500B5177D /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548CE051234D33B500B5177D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		548CE053234D33B500B5177D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		548CE055234D33B500B5177D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		548CE058234D33B500B5177D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		548CE055234D33B500B5177D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		548CE05D234D33B600B5177D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		548CE05F234D33B600B5177D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		548CE065234D33E600B5177D /* ZipCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeHelper.swift; sourceTree = "<group>"; };
 		548CE067234D340700B5177D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5680BF7D23EA07E000CD25FB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5680BF7F23EA23C900CD25FB /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		5680BF8123EB388B00CD25FB /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5680BF8523EB39D800CD25FB /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +64,42 @@
 		548CE050234D33B500B5177D /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				5680C03623EC9FA400CD25FB /* Secrets */,
+				5680C03523EC9F1200CD25FB /* Views */,
+				5680C03423EC9EE300CD25FB /* Controllers */,
 				548CE051234D33B500B5177D /* AppDelegate.swift */,
 				548CE053234D33B500B5177D /* SceneDelegate.swift */,
 				548CE065234D33E600B5177D /* ZipCodeHelper.swift */,
-				548CE055234D33B500B5177D /* ViewController.swift */,
-				548CE057234D33B500B5177D /* Main.storyboard */,
 				548CE05C234D33B600B5177D /* LaunchScreen.storyboard */,
 				548CE067234D340700B5177D /* Assets.xcassets */,
 				548CE05F234D33B600B5177D /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		5680C03423EC9EE300CD25FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				548CE055234D33B500B5177D /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5680C03523EC9F1200CD25FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5680BF7F23EA23C900CD25FB /* MainCell.swift */,
+				5680BF7D23EA07E000CD25FB /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5680C03623EC9FA400CD25FB /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				5680BF8123EB388B00CD25FB /* SecretKey.swift */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +118,9 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				5680BF8423EB39D800CD25FB /* ImageKit */,
+			);
 			productName = WeatherApp;
 			productReference = 548CE04E234D33B500B5177D /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 548CE045234D33B500B5177D;
+			packageReferences = (
+				5680BF8323EB39D800CD25FB /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 548CE04F234D33B500B5177D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +168,6 @@
 			files = (
 				548CE05E234D33B600B5177D /* LaunchScreen.storyboard in Resources */,
 				548CE068234D340700B5177D /* Assets.xcassets in Resources */,
-				548CE059234D33B500B5177D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				548CE066234D33E600B5177D /* ZipCodeHelper.swift in Sources */,
-				548CE056234D33B500B5177D /* ViewController.swift in Sources */,
+				548CE056234D33B500B5177D /* MainViewController.swift in Sources */,
+				5680BF8023EA23C900CD25FB /* MainCell.swift in Sources */,
 				548CE052234D33B500B5177D /* AppDelegate.swift in Sources */,
+				5680BF8223EB388B00CD25FB /* SecretKey.swift in Sources */,
+				5680BF7E23EA07E000CD25FB /* MainView.swift in Sources */,
 				548CE054234D33B500B5177D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		548CE057234D33B500B5177D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				548CE058234D33B500B5177D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		548CE05C234D33B600B5177D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5680BF8323EB39D800CD25FB /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5680BF8423EB39D800CD25FB /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5680BF8323EB39D800CD25FB /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 548CE046234D33B500B5177D /* Project object */;
 }
