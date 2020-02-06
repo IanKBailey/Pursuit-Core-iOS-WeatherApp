@@ -17,6 +17,8 @@
 		5680BF8023EA23C900CD25FB /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680BF7F23EA23C900CD25FB /* MainCell.swift */; };
 		5680BF8223EB388B00CD25FB /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680BF8123EB388B00CD25FB /* SecretKey.swift */; };
 		5680BF8523EB39D800CD25FB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5680BF8423EB39D800CD25FB /* ImageKit */; };
+		5680C03823ECA4B100CD25FB /* WeatherTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680C03723ECA4B100CD25FB /* WeatherTabBarController.swift */; };
+		5680C03A23ECA82A00CD25FB /* FavoritesImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680C03923ECA82A00CD25FB /* FavoritesImagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		5680BF7D23EA07E000CD25FB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5680BF7F23EA23C900CD25FB /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		5680BF8123EB388B00CD25FB /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
+		5680C03723ECA4B100CD25FB /* WeatherTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTabBarController.swift; sourceTree = "<group>"; };
+		5680C03923ECA82A00CD25FB /* FavoritesImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesImagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				548CE055234D33B500B5177D /* MainViewController.swift */,
+				5680C03723ECA4B100CD25FB /* WeatherTabBarController.swift */,
+				5680C03923ECA82A00CD25FB /* FavoritesImagesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 				548CE056234D33B500B5177D /* MainViewController.swift in Sources */,
 				5680BF8023EA23C900CD25FB /* MainCell.swift in Sources */,
 				548CE052234D33B500B5177D /* AppDelegate.swift in Sources */,
+				5680C03A23ECA82A00CD25FB /* FavoritesImagesViewController.swift in Sources */,
 				5680BF8223EB388B00CD25FB /* SecretKey.swift in Sources */,
+				5680C03823ECA4B100CD25FB /* WeatherTabBarController.swift in Sources */,
 				5680BF7E23EA07E000CD25FB /* MainView.swift in Sources */,
 				548CE054234D33B500B5177D /* SceneDelegate.swift in Sources */,
 			);

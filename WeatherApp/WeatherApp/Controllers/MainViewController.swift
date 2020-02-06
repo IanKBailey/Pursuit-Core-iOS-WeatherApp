@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let cellIdentifier = "MainCell"
-
 class MainViewController: UIViewController {
 
     
@@ -25,7 +23,7 @@ private let mainView = MainView()
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.title = "Search"
-        mainView.collectionView.register(MainCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        mainView.collectionView.register(MainCell.self, forCellWithReuseIdentifier: "MainCell")
         mainView.collectionView.dataSource = self
     }
 
@@ -38,7 +36,7 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath)
         cell.backgroundColor = .red
         return cell
         
@@ -48,6 +46,6 @@ extension MainViewController: UICollectionViewDataSource {
 }
 
 
-extension MainViewController: UICollectionViewDelegateFlowLayout {
-
-}
+//extension MainViewController: UICollectionViewDelegateFlowLayout {
+//
+//}
